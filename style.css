@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+
+.header {
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    color: #4ca0af;
+    padding: 20px;
+}
+
+
+
+.navbar {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*navbar hover color change*/
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*add color to active link*/
+.navbar a.active {
+    background-color: #033f8d;
+    color: white;
+}
+
+.navbar a.welcome {
+    color: white;
+
+}
+
+.navbar a.welcome:hover {
+    color: black
+}
+
+.navbar a.split {
+    float: right;
+    background-color: #ac1111;
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+p, body, td { font-family: -apple-system,system-ui,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif; font-size: 14px; }
+body { padding: 0px; margin: 0px; background-color: #ffffff; }
+body, input, select, button {
+    font-size: 14px;
+  }
+select {
+    padding: 5px;
+  }
+button {
+    padding: 5px 15px;
+  }
+a { color: #1155a3; }
+.space { margin: 10px 0px 10px 0px; }
+.header { background: #003267; background: linear-gradient(to right, #011329 0%,#00639e 44%,#011329 100%); padding:20px 10px; color: white; box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75); }
+.header a { color: white; }
+.header h1 a { text-decoration: none; }
+.header h1 { padding: 0px; margin: 0px; }
+.main { padding: 10px }
+  
+  
+.column-main {
+    margin-left: 220px;
+}
+  
+.column-left {
+    float:left;
+    width:220px;
+}
+  
+.toolbar {
+    margin: 10px 0px;
+}
+  
+.toolbar > .toolbar-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+  
+.toolbar-item {
+    padding: 0px 10px;
+}
