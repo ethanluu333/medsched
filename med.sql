@@ -26,22 +26,12 @@ CREATE TABLE `doc` (
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-CREATE TABLE `appointment` (
-	`appointment_id` INT(11) NOT NULL AUTO_INCREMENT,
-	`appointment_start` DATETIME NOT NULL,
-	`appointment_end` DATETIME NOT NULL,
-	`appointment_patient_name` VARCHAR(100) NULL DEFAULT NULL,
-	`appointment_status` VARCHAR(100) NOT NULL DEFAULT 'free',
-	`appointment_patient_session` VARCHAR(100) NULL DEFAULT NULL,
-	`doctor_id` INT(11) NOT NULL,
-	PRIMARY KEY (`appointment_id`)
-);
 
-CREATE TABLE messages (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    doctor_id int(7) NOT NULL,
-    message TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+CREATE TABLE `messages` (
+    `id` INT AUTO_INCREMENT PRIMARY KEY,
+    `doctor_id` int(7) NOT NULL,
+    `message` TEXT,
+    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (doctor_id) REFERENCES doc(Doc_ID)
 );
 

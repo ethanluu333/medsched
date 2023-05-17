@@ -28,6 +28,7 @@ include("function.php");
         <a href="#about">About</a>
         <a href="schedule.php">Schedule an Appointment</a>
         <a class="active" href="#">Search for Doctors</a>
+        <a href="view_messages.php">View Messages</a>
         <a href="logout.php" class="split">Logout</a>
     </div>
 

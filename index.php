@@ -25,6 +25,7 @@ include("function.php");
         <a href="#about">About</a>
         <a href="schedule.php">Schedule an Appointment</a>
         <a href="search.php">Search for Doctors</a>
+        <a href="view_messages.php">View Messages</a>
         <a href="logout.php" class="split">Logout</a>
     </div>
     <!-- Slideshow container -->
@@ -74,7 +75,14 @@ include("function.php");
             Another additional responsibility is managing your staff and resources. With so many things to manage, dedicating your full time and spending quality time with your patients may not be possible. Your clinic probably see hundreds of patients everyday. Managing appointments efficiently is a big problem which every business faces. 
             With so many new people to cater to and a equal number of old patients to catch up with, you must have faced quite a few situations. This also includes double bookings and missing on patient appointments. Get rid of everyday nonsense with our online appointment scheduling software.
             Here at MedSched we make it our top priority to make it so that you can network easier.</h5>
+        <br>
+        
+        <h5>With MedSched, medical offices can customize dates/times their providers are available for meetings, the foods they would prefer, and a way to easily approve or not approve people that sign up for those availabilities. On the other end, doctors wishing to grow their practices, medical device companies, pharmaceutical companies all could gain 
+            access to this scheduling software for a fee to find practices in a desired area and rather than going through the laborious work of cold calling or emailing all these practices, can simply sign up for practices with only a few clicks of a button.</h5>
+    </div>
     </section>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
