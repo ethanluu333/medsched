@@ -7,7 +7,7 @@ On the other end, doctors wishing to grow their practices, medical device compan
 rather than going through the laborious work of cold calling or emailing all these practices, can simply sign up for practices with only a few clicks of a button.
 
 # How to Run
-- Create Database called med_sched
+- copy and paste the code from "create.sql" into the xampp admin to create database "med_sched"
 - copy and paste the code from "med.sql" into the xampp admin to generate the tables
 - copy and paste the code from "insert.sql" into the XAMPP admin to insert Doctor's info
 - ![image](https://github.com/ethanluu333/medsched/assets/60045116/fe984c7f-76ab-4f24-8b87-cd4b5993fb33)
