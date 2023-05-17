@@ -26,16 +26,6 @@ CREATE TABLE `doc` (
   
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
-CREATE TABLE `messages` (
-    `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `doctor_id` int(7) NOT NULL,
-    `message` TEXT,
-    `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (doctor_id) REFERENCES doc(Doc_ID)
-);
-
-
 ALTER TABLE `user`
   ADD PRIMARY KEY (`User_ID`);
 
@@ -51,6 +41,18 @@ ALTER TABLE `doc`
 --
 ALTER TABLE `doc`
   MODIFY `Doc_ID` int(7) NOT NULL AUTO_INCREMENT;
+
+  
+CREATE TABLE messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  doctor_id int(7) NOT NULL,
+  message TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (doctor_id) REFERENCES doc(Doc_ID)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
 
 
 
