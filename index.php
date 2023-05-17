@@ -20,7 +20,7 @@ include("function.php");
         <h2>Welcome to MedSched!</h2>
     </div>
     <div class="navbar">
-        <a class="welcome">Hello, <?php echo $user_data['UserName']; ?> </a>
+        <a class="welcome">Hello, <?php echo $user_data['First_Name']; ?> </a>
         <a class="active" href="#">Home<span class="sr-only"></span></a>
         <a href="#about">About</a>
         <a href="schedule.php">Schedule an Appointment</a>
@@ -70,7 +70,10 @@ include("function.php");
         <h2 id="about">About Us</h2>
     </div>
     <div class="description">
-        <p>Here at MedSched we make it our top priority to make it so that you can find the most suitable doctor for you.
+        <h5>Doctors are real life superheroes who save tens and hundreds of lives everyday. But to be a successful and a renowned doctor in your locality, gaining your patient’s trust is very important. With emergencies and everyday struggle, spending your valuable time on scheduling patient appointments can become quite draining.
+            Another additional responsibility is managing your staff and resources. With so many things to manage, dedicating your full time and spending quality time with your patients may not be possible. Your clinic probably see hundreds of patients everyday. Managing appointments efficiently is a big problem which every business faces. 
+            With so many new people to cater to and a equal number of old patients to catch up with, you must have faced quite a few situations. This also includes double bookings and missing on patient appointments. Get rid of everyday nonsense with our online appointment scheduling software.
+            Here at MedSched we make it our top priority to make it so that you can network easier.</h5>
     </section>
     <script src="script.js"></script>
 </body>

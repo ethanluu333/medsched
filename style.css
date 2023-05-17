@@ -141,3 +141,7 @@ a { color: #1155a3; }
 .toolbar-item {
     padding: 0px 10px;
 }
+
+.description {
+    font-size: 40px;
+}

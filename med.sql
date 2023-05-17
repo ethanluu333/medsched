@@ -1,7 +1,5 @@
 -- Table structure for table `user`
 
-CREATE DATABASE IF NOT EXISTS med_sched;
-
 CREATE TABLE `user` (
   `User_ID` int(7) NOT NULL,
   `First_Name` varchar(50) NOT NULL,
@@ -18,8 +16,9 @@ CREATE TABLE `user` (
 
 CREATE TABLE `doc` (
   `Doc_ID` int(7) NOT NULL,
-  `Doc_Name` varchar(100) NOT NULL,
+  `Name` varchar(100) NOT NULL,
   `Email` varchar(50) NOT NULL,
+  `Number` varchar(50) NOT NULL, 
   `City` varchar(50) NOT NULL, 
   `Hospital` varchar(50) NOT NULL,
   `Specialization` varchar(50) NOT NULL,
@@ -36,6 +35,14 @@ CREATE TABLE `appointment` (
 	`appointment_patient_session` VARCHAR(100) NULL DEFAULT NULL,
 	`doctor_id` INT(11) NOT NULL,
 	PRIMARY KEY (`appointment_id`)
+);
+
+CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    doctor_id int(7) NOT NULL,
+    message TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (doctor_id) REFERENCES doc(Doc_ID)
 );
 
 

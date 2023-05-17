@@ -81,6 +81,14 @@ session_start();
         padding: 20px;
     }
 
+    body {
+
+        background-image: url('images/background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
     </style>
 
     <div id="box">
