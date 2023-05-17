@@ -12,4 +12,4 @@ rather than going through the laborious work of cold calling or emailing all the
 - copy and paste the code from "insert.sql" into the XAMPP admin to insert Doctor's info
 - ![image](https://github.com/ethanluu333/medsched/assets/60045116/fe984c7f-76ab-4f24-8b87-cd4b5993fb33)
 - Start the Apache and MySQL modules in the XAMPP control panel 
-- Go to any browser and enter "localhost/medsched" into the bar at the top 
+- Go to any browser and enter "localhost/medsched/login.php" into the bar at the top 
